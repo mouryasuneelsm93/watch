@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clock</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="clock.css">
+
+</head>
+<body>
+<div class="container text-center">
+	<center>
+		<div class="circle">
+			<div class="b12">12</div>
+			<div class="b1">1</div>
+			<div class="b2">2</div>	
+			<div class="b3">3</div>	
+			<div class="b4">4</div>
+			<div class="b5">5</div>
+			<div class="b6">6</div>
+			<div class="b9">9</div>
+			<div class="b7">7</div>
+			<div class="b8">8</div>
+			<div class="b10">10</div>
+			<div class="b11">11</div>
+			<div class="c1"></div>
+			<div id="second"></div>
+			<div id="minute"></div>
+			<div id="hour"></div>
+		</div>
+
+
+	<div class="digital">
+		<span id="ho"></span> :
+		<span id="min"></span> :
+		<span id="sec"></span>
+	</div>		</center>
+
+
+</div>
+
+<script>
+setInterval(rotate,1000);
+function rotate()
+{
+var present= new Date();
+
+var s=present.getSeconds();
+var m=present.getMinutes();
+var h=present.getHours();
+t=h-12;
+document.getElementById("sec").innerHTML=s;
+document.getElementById("ho").innerHTML=t;
+document.getElementById("min").innerHTML=m;
+var s1=s*6;
+var m1=(m*6)
+var h1=(h*30);
+
+// var minutes=date.getMinutes()*6;
+// var hour=((date.getHours()%12)*30)+(0.1*minutes);
+// var seconds=(date.getSeconds()*6);
+
+document.getElementById('second').style.transform=`rotate(${s1}deg)`;
+document.getElementById('minute').style.transform=`rotate(${m1}deg)`;
+document.getElementById('hour').style.transform=`rotate(${h1}deg)`;
+console.log(s);
+}
+</script>	
+</body>
+</html>
