@@ -18,7 +18,8 @@ body
 }
 .container
 {
-	padding-top: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 .b12
 {
@@ -140,7 +141,7 @@ body
 	top:38%;
 }
 
-@media screen and(max-width:200px)
+@media screen and(min-width:200px)
 {
 	.circle
 	{
@@ -294,11 +295,11 @@ body
 .digital
 {
 
-	width:30%;
+	width:50%;
 	height:auto;
 	background-color: rgba(200,0,0,.9);
 	border-radius: 20px;
-	font-size: 30px;
+	font-size: 20px;
 	color:white;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -308,7 +309,7 @@ body
 .digital
 {
 		margin-top: 10px;
-	width:30%;
+	width:50%;
 	height:auto;
 	background-color: rgba(200,0,0,.9);
 	border-radius: 20px;
