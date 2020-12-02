@@ -1,6 +1,6 @@
 body
 {
-	background-color:#fffae6;
+	background-color:#cca300;
 
 }
 .circle
@@ -103,7 +103,7 @@ body
 }#second
 {
 	position: absolute;
-	width:5px;
+	width:2px;
 	height:110px;
 	border-radius: 10px;
 	left:49.5%;
@@ -135,12 +135,12 @@ body
 	background-size: 100%;
  	transform-origin: bottom;
  	
-	background-color: blue;
+	background-color: black;
 	left:50%;
-	top:40%;
+	top:38%;
 }
 
-@media screen and(min-width:200px)
+@media screen and(max-width:200px)
 {
 	.circle
 	{
@@ -270,22 +270,52 @@ body
 		background-size: 100%;
  		transform-origin: bottom;
  	
-		background-color: blue;
+		background-color: black;
 		left:49%;
 		top:37%;
 	}
+	#sec
+	{
+		font-size: 20px;
+		color:white;
+	}
 
-}
+	#min
+	{
+		font-size: 20px;
+		color:white;
+	}
 
+	#ho
+	{
+		font-size: 20px;
+		color:white;
+	}
 .digital
 {
+
 	width:30%;
-	height:90px;
-	background-color: rgba(0,0,0,.5);
+	height:auto;
+	background-color: rgba(200,0,0,.9);
 	border-radius: 20px;
 	font-size: 30px;
 	color:white;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+	}
+
+.digital
+{
+		margin-top: 10px;
+	width:30%;
+	height:auto;
+	background-color: rgba(200,0,0,.9);
+	border-radius: 20px;
+	font-size: 30px;
+	color:white;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 #sec
 {
@@ -303,12 +333,4 @@ body
 {
 	font-size: 30px;
 	color:white;
-}
-.img
-{
-	background-image: url(backgr.webp);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width:50%;
-	height:100vh;
 }
