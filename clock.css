@@ -1,6 +1,6 @@
 body
 {
-	background-color:#cca300;
+	background-color:	 #ffdb4d;
 
 }
 .circle
@@ -10,7 +10,7 @@ body
 	height: 400px;
 	border:10px solid white;
 	 background-image:  linear-gradient(to right, red , yellow);
-
+	  box-shadow: 0px 0px 10px 20px rgba(0,0,0,.5);
 	
 	border-radius: 200px;
 	
@@ -151,7 +151,7 @@ body
 		border:10px solid white;
 	 	background-image:  linear-gradient(to right, red , yellow);
 
-	
+		box-shadow: 0px 0px 10px 20px rgba(0,0,0,.5);
 		border-radius: 150px;
 	
 		padding: 20px 20px;
@@ -295,7 +295,7 @@ body
 .digital
 {
 
-	width:50%;
+	width:40%;
 	height:auto;
 	background-color: rgba(200,0,0,.9);
 	border-radius: 20px;
@@ -308,8 +308,8 @@ body
 
 .digital
 {
-		margin-top: 10px;
-	width:50%;
+		margin-top: 30px;
+	width:40%;
 	height:auto;
 	background-color: rgba(200,0,0,.9);
 	border-radius: 20px;
